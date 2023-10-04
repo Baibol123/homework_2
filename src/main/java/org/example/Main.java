@@ -21,7 +21,19 @@ public class Main {
         System.out.println(weather(30, -5.0));
         System.out.println(weather(14, 22.0));
 
+
+        System.out.println(weather(generateRandomAge(), 10));
     }
-    
+
+
+                         //dz na soobr
+
+    public static int generateRandomAge() {
+        Random rand = new Random();
+        int minAge = 1;
+        int maxAge = 100;
+        return rand.nextInt(maxAge - minAge + 1) + minAge;
+    }
+
 
 }
